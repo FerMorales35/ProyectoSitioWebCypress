@@ -1,0 +1,16 @@
+{
+    "viewportWidth": 1800,
+    "viewportHeight": 1200,
+    "chromeWebSecurity": false,
+    "defaultCommandTimeout": 15000, 
+    "pageLoadTimeout": 9000,
+    "screenshotOnRunFailure": true,
+    "reporter": "cypress-mochawesome-reporter",
+    "reporterOptions": {
+        "reportDir": "cypress/report",
+        "charts": true,
+        "reportPageTitle": "Demo report",
+        "embeddedScreenshots": true
+      }
+
+}
