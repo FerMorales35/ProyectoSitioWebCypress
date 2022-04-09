@@ -30,7 +30,7 @@ class Home_Fravega {
   }
 
   //ACA QUEDE
-  seleccionarTipoProducto(tipoProducto, busqueda) {
+  /* seleccionarTipoProducto(tipoProducto, busqueda) {
 
     let tiempo = 2000
     let enlace 
@@ -74,7 +74,7 @@ class Home_Fravega {
            cy.wait(tiempo)
            cy.get($el).should("contains.text",marca)  
       })
-   } 
+   }  */
 }
 //cy.log("Producto: " + $el.text())
 //cy.get($el).should("contains.text",marca)  
