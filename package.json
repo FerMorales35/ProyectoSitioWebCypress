@@ -7,12 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:runChrome": "cypress run --browser chrome --spec cypress/integration/Test/* .spec.js",
     "cypress:runFirefox": "cypress run --browser firefox --spec cypress/integration/Test/* .spec.js",
-    "cypress:runEdge": "cypress run --browser edge --spec cypress/integration/Test/* .spec.js" 
+    "cypress:runEdge": "cypress run --browser edge --spec cypress/integration/Test/* .spec.js"
   },
   "author": "Fernando",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^9.5.2",
+    "cypress": "^9.5.3",
     "cypress-mochawesome-reporter": "^3.0.0",
     "cypress-xpath": "^1.6.2",
     "mochawesome": "^7.1.2"
