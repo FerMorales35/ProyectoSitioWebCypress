@@ -1,3 +1,5 @@
+import groovy.json.JsonOutput
+
 def COLOR_MAP = [
     'SUCCESS': 'good',
     'FAILURE': 'danger'
@@ -15,7 +17,7 @@ pipeline{
     }
 
     parameters{
-        string(name: "SPEC", defaultValue: "cypress/integration/**/**", description: "Ejemplo cypress run --browser firefox --spec cypress/integration/Test/*.spec.js")
+        string(name: "SPEC", defaultValue: "cypress/integration/**/**", description: "Ejemplo: cypress run --browser chrome --spec cypress/integration/Test/*.spec.js")
         choice(name: "BROWSER", choices: ['chrome','firefox'], description: "Elija un navegaodor para correr sus tests")
     }
 
