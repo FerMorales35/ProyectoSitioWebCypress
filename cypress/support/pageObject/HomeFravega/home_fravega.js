@@ -24,7 +24,7 @@ class Home_Fravega {
     cy.xpath("//div[@class='sc-ad9dc01-1 iakjIl']/div/ul/li/h4/a").each(($el) => {
         cy.log("enlace: " + $el.text())
         if ($el.text().includes(tipoProducto)) {
-          cy.wrap($el).click()
+          cy.wrap($el).click({force: true})
           cy.log("Hizo click en : " + $el.text())
           return false
         }
