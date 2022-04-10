@@ -1,0 +1,26 @@
+[
+  {
+    "tipoProducto": "Heladeras",
+    "seleccion": "Heladeras",
+    "marca": "Patrick",
+    "titulo": "Heladeras Patrick"
+  },
+  {
+    "tipoProducto": "TV",
+    "seleccion": "TV",
+    "marca": "Hisense",
+    "titulo": "TV Hisense"
+  },
+  {
+    "tipoProducto": "Sommier",
+    "seleccion": "Colchones y sommiers",
+    "marca": "Estelar",
+    "titulo": "Sommier Estelar"
+  },
+  {
+    "tipoProducto": "Celular",
+    "seleccion": "Celulares Liberados",
+    "marca": "Samsung",
+    "titulo": "Celular Samsung"
+  }
+]

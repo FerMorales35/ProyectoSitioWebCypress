@@ -1,17 +1,5 @@
 require("cypress-xpath");
 class Home_Fravega {
-  visitarSitio() {
-    let tiempo = 2000;
-
-    before(() => {
-      cy.visit("https://www.fravega.com/");
-      cy.title("eq","Frávega: Electrodomésticos, Tecnología y Artículos para el hogar")
-      cy.wait(tiempo)
-      cy.fixture("datosFravega").then((data) => {
-        globalThis.data = data;
-      })
-    })
-  }
 
   buscarProducto(producto) {
     let tiempo = 2000;
@@ -25,7 +13,7 @@ class Home_Fravega {
         cy.get('[style="grid-area:search"] > .sc-higWrZ > .sc-gTgzoy').type(producto).type("{enter}")
         cy.wait(tiempo)
         //Validar titulo de la seccion del producto seleccionado
-        cy.xpath("//h1[contains(text(),'Heladera')]").should("contains.text",producto)
+        cy.get(".sc-ad9dc01-6").should("contains.text",producto)
       })
   }
 
