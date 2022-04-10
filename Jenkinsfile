@@ -17,8 +17,8 @@ pipeline{
     }
 
     parameters{
-        string(name: "SPEC", defaultValue: "cypress/integration/**/**", description: "Ejemplo: cypress run --browser chrome --spec cypress/integration/Test/*.spec.js")
-        choice(name: "BROWSER", choices: ['chrome','firefox'], description: "Elija un navegaodor para correr sus tests")
+        string(name: "SPEC", defaultValue: "cypress/integration/**/**", description: "Ejemplo: cypress/integration/Test/*.spec.js")
+        choice(name: "BROWSER", choices: ['chrome','firefox','edge'], description: "Elija un navegaodor para correr sus tests")
     }
 
     options{

@@ -16,14 +16,13 @@ describe('Realizar una busqueda en el sitio web Fravega y validar que el titulo 
     
     tests.forEach(test => {
         
-        it('Busqueda de producto en el sitio', () => { 
-            
+        it('Busqueda de producto en el sitio', () => {    
+                
             pagina.buscarProducto(test.tipoProducto)
             pagina.seleccionarTipoProducto(test.seleccion,test.tipoProducto)
             pagina.seleccionarMarca(test.marca,test.titulo)
             pagina.validarMarcaPorProductoyCantidad(test.marca) 
+
         })
-
     })
-
 })
