@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     parameters{
-        string(name: "SPEC", defaultValue: "cypress/integration/**/**", description: "Ejemplo de test")
+        string(name: "SPEC", defaultValue: "cypress/integration/**/**", description: "Ejemplo cypress run --browser firefox --spec cypress/integration/Test/*.spec.js")
         choice(name: "BROWSER", choices: ['chrome','firefox'], description: "Elija un navegaodor para correr sus tests")
     }
 
