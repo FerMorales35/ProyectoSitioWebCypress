@@ -10,6 +10,6 @@ describe('Realizar una busqueda en el sitio web Fravega y validar que el titulo 
         pagina.buscarProducto(data.tipoProducto)
         pagina.seleccionarTipoProducto(data.seleccion,data.tipoProducto)
         pagina.seleccionarMarca(data.marca,data.titulo)
-        /*pagina.validarMarcaPorProductoyCantidad(data.marca) */
+        pagina.validarMarcaPorProductoyCantidad(data.marca) 
     })
 })

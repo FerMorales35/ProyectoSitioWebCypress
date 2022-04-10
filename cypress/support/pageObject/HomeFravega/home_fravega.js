@@ -66,14 +66,13 @@ class Home_Fravega {
    })
 }
 
-  /*validarMarcaPorProductoyCantidad(marca){
+  validarMarcaPorProductoyCantidad(marca){
 
-      cy.xpath("//ul[@data-test-id='results-list']/li/article/a/div/div/span").each(($el,$index,$list) =>{   
+      cy.xpath("//ul[@data-test-id='results-list']/li/article/a/div/div/span").each(($el) =>{   
            cy.log("Producto: " + $el.text())
-           cy.wait(tiempo)
            cy.get($el).should("contains.text",marca)  
       })
-   }  */
+   }  
 }
 
-export default Home_Fravega;
+export default Home_Fravega
